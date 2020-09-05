@@ -4,6 +4,8 @@ services:
     image: senaite
     volumes:
     - data:/data
+    environment:
+    - ADDONS=senaite.core senaite.storage senaite.core.listing senaite.core.supermodel senaite.impress senaite.lims senaite.health
     ports:
     - "8080:8080"
 
