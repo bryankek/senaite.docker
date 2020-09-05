@@ -15,7 +15,8 @@ ENV PLONE_MAJOR=4.3 \
     SENAITE_INSTANCE_HOME=/home/senaite/senaitelims \
     SENAITE_DATA=/data \
     SENAITE_FILESTORAGE=/data/filestorage \
-    SENAITE_BLOBSTORAGE=/data/blobstorage
+    SENAITE_BLOBSTORAGE=/data/blobstorage \
+    ADDONS='senaite.lims senaite.core senaite.core.supermodel senaite.core.listing senaite.impress senaite.storage senaite.health'
 
 # Create the senaite user
 RUN useradd --system -m -d $SENAITE_HOME -U -u 500 $SENAITE_USER
